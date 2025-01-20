@@ -1,0 +1,19 @@
+2025-01-19 10:23:45 INFO  [SystemInit] Starting system initialization...
+2025-01-19 10:23:46 DEBUG [ConfigLoader] Loading configuration file: /etc/app/config.yaml
+2025-01-19 10:23:46 INFO  [DatabaseConnector] Connecting to database at 192.168.1.10:5432
+2025-01-19 10:23:47 WARN  [DatabaseConnector] Connection slow: took 2.1 seconds
+2025-01-19 10:23:48 INFO  [DatabaseConnector] Connection established successfully.
+2025-01-19 10:23:50 INFO  [ServiceManager] Starting services...
+2025-01-19 10:23:51 DEBUG [ServiceManager] Service 'UserAuth' started successfully.
+2025-01-19 10:23:52 DEBUG [ServiceManager] Service 'PaymentGateway' started successfully.
+2025-01-19 10:23:52 INFO  [ServiceManager] All services started.
+2025-01-19 10:24:01 ERROR [APIHandler] Failed to process request: timeout while fetching data from external API
+2025-01-19 10:24:01 DEBUG [APIHandler] Request payload: {"userId": 12345, "action": "fetchData"}
+2025-01-19 10:24:02 INFO  [Monitoring] Health check passed for all services.
+2025-01-19 10:24:15 INFO  [UserSession] User logged in: userId=12345
+2025-01-19 10:24:16 DEBUG [UserSession] Session token generated: abcdef1234567890
+2025-01-19 10:24:30 WARN  [DiskMonitor] Disk usage at 85% on /dev/sda1
+2025-01-19 10:24:45 INFO  [SystemShutdown] Shutting down services...
+2025-01-19 10:24:46 DEBUG [ServiceManager] Service 'UserAuth' stopped successfully.
+2025-01-19 10:24:47 DEBUG [ServiceManager] Service 'PaymentGateway' stopped successfully.
+2025-01-19 10:24:47 INFO  [SystemShutdown] System shutdown complete.
